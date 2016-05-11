@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import SwiftNotificationCenter
+import SwiftNotificationCenter
 
 class SwiftNotificationCenterTests: XCTestCase {
     

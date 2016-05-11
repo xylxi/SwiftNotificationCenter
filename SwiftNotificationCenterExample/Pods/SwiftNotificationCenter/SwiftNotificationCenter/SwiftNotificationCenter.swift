@@ -13,7 +13,7 @@ public class NotificationCenter {
     private static var observersDic = [String: Any]()
     
     private static let notificationQueue = dispatch_queue_create("com.swift.notification.center.dispatch.queue", DISPATCH_QUEUE_CONCURRENT)
-    
+    // T.Type：指的是协议的类型，而T指的的类型
     public static func register<T>(protocolType: T.Type, observer: T) {
         
         guard let object = observer as? AnyObject else {
